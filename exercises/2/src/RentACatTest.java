@@ -138,6 +138,11 @@ public class RentACatTest {
 	@Test
 	public void testCatAvailableFalseNumCats3() {
 		// TODO
+		r.addCat(c1);
+		r.addCat(c2);
+		r.addCat(c3);
+		Mockito.when(r.catAvailable(2)).thenReturn(false);
+		assertFalse(r.catAvailable(2));
 	}
 
 	/**
