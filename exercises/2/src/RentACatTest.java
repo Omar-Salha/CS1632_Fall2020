@@ -141,7 +141,7 @@ public class RentACatTest {
 		r.addCat(c1);
 		r.addCat(c2);
 		r.addCat(c3);
-		Mockito.when(r.catAvailable(2)).thenReturn(false);
+		r.rentCat(2);
 		assertFalse(r.catAvailable(2));
 	}
 
